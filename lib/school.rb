@@ -1,10 +1,9 @@
 class School
-  attr_reader :name, :grade
-  ROSTER = []
-
-  def initialize(name)
-    @name = name
-    ROSTER << name
+  attr_reader :school, :student, :grade, :roster
+  
+  def initialize(school)
+    @school = school
+    @roster = {}
   end
 
   def add_student
